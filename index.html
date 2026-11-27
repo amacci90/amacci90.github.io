@@ -1,0 +1,1301 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>www.16maokk.com_视频品牌官方网站_原创高清内容生态平台</title>
+<meta name="description" content="www.16maokk.com 是面向视频创作者与观众的企业级内容平台官网，提供原创高清视频、创作者社区、精品专题与官方发布动态，深耕垂直领域内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f2b4a'/%3E%3Cpath d='M24 20l20 12-20 12z' fill='%2338e0c8'/%3E%3C/svg%3E">
+<style>
+:root{
+  --mk-ink:#0b1a2a;
+  --mk-deep:#0f2b4a;
+  --mk-deeper:#08182a;
+  --mk-accent:#38e0c8;
+  --mk-accent-soft:rgba(56,224,200,.14);
+  --mk-line:rgba(255,255,255,.10);
+  --mk-line-strong:rgba(255,255,255,.18);
+  --mk-text:#e8eef5;
+  --mk-muted:#8ea3b8;
+  --mk-card:#12263c;
+  --mk-card-2:#0e2033;
+  --mk-radius:14px;
+  --mk-maxw:1180px;
+  --mk-sticky:104px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--mk-sticky)}
+body{
+  margin:0;
+  background:
+    radial-gradient(1100px 520px at 82% -8%, rgba(56,224,200,.10), transparent 60%),
+    radial-gradient(900px 480px at 6% 2%, rgba(64,120,255,.12), transparent 62%),
+    var(--mk-ink);
+  color:var(--mk-text);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+.mk-shell{width:100%;max-width:var(--mk-maxw);margin:0 auto;padding:0 22px}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700;letter-spacing:.2px}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+
+/* ---------- 吸顶：公告条 + 页头 ---------- */
+.mk-sticky{position:sticky;top:0;z-index:60}
+.mk-announce{
+  background:linear-gradient(90deg,#0e7f72,#0b5e63 55%,#0f2b4a);
+  border-bottom:1px solid rgba(255,255,255,.10);
+  font-size:13.5px;
+}
+.mk-announce-inner{display:flex;align-items:center;gap:12px;min-height:38px;padding:6px 0;flex-wrap:wrap}
+.mk-announce-tag{
+  flex:0 0 auto;background:var(--mk-accent);color:#062126;font-weight:700;
+  font-size:11.5px;letter-spacing:1px;padding:2px 9px;border-radius:999px;
+}
+.mk-announce-track{display:flex;gap:26px;flex-wrap:wrap;color:#dcf6f1}
+.mk-announce-track b{color:#fff;font-weight:700}
+.mk-header{
+  background:rgba(11,26,42,.93);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--mk-line);
+}
+.mk-header-inner{display:flex;align-items:center;gap:18px;min-height:64px}
+.mk-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;letter-spacing:.4px;flex:0 0 auto}
+.mk-logo-mark{
+  width:34px;height:34px;border-radius:9px;background:linear-gradient(140deg,#38e0c8,#2f7dff);
+  display:grid;place-items:center;color:#062126;font-size:15px;font-weight:900;
+}
+.mk-logo small{display:block;font-size:10.5px;font-weight:500;color:var(--mk-muted);letter-spacing:1.6px}
+.mk-nav{display:flex;gap:4px;margin-left:8px;flex:1 1 auto;flex-wrap:wrap}
+.mk-nav a{
+  padding:7px 12px;border-radius:9px;font-size:14.5px;color:#cbd8e6;transition:.18s;
+}
+.mk-nav a:hover{background:var(--mk-accent-soft);color:#fff}
+.mk-search{display:flex;align-items:center;gap:6px;flex:0 0 auto}
+.mk-search input{
+  width:196px;background:var(--mk-card-2);border:1px solid var(--mk-line-strong);
+  color:var(--mk-text);border-radius:10px;padding:8px 11px;font-size:13.5px;outline:none;transition:.2s;
+}
+.mk-search input:focus{border-color:var(--mk-accent);box-shadow:0 0 0 3px var(--mk-accent-soft)}
+.mk-search button{
+  background:var(--mk-accent);border:0;color:#062126;font-weight:700;font-size:13.5px;
+  padding:8px 13px;border-radius:10px;cursor:pointer;transition:.18s;
+}
+.mk-search button:hover{filter:brightness(1.08)}
+.mk-burger{
+  display:none;background:transparent;border:1px solid var(--mk-line-strong);color:var(--mk-text);
+  border-radius:10px;padding:7px 11px;font-size:15px;cursor:pointer;
+}
+.mk-search-feedback{
+  font-size:12.5px;color:var(--mk-accent);text-align:right;padding:0 0 7px;
+  max-height:0;overflow:hidden;transition:.25s;
+}
+.mk-search-feedback.mk-show{max-height:40px;padding-bottom:7px}
+
+/* ---------- HERO ---------- */
+.mk-hero{padding:52px 0 46px;border-bottom:1px solid var(--mk-line)}
+.mk-hero-grid{display:grid;grid-template-columns:6fr 4fr;gap:44px;align-items:center}
+.mk-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:1.6px;
+  color:var(--mk-accent);border:1px solid rgba(56,224,200,.4);border-radius:999px;padding:4px 13px;
+  background:var(--mk-accent-soft);text-transform:uppercase;
+}
+.mk-hero h1{font-size:clamp(28px,4.1vw,46px);margin:18px 0 14px;letter-spacing:.5px}
+.mk-hero h1 em{font-style:normal;color:var(--mk-accent)}
+.mk-hero-lede{font-size:16.5px;color:#c4d3e2;max-width:640px}
+.mk-hero-about{
+  margin-top:20px;background:linear-gradient(180deg,rgba(18,38,60,.9),rgba(14,32,51,.55));
+  border:1px solid var(--mk-line);border-radius:var(--mk-radius);padding:18px 20px;
+  font-size:14.5px;color:#bccbdb;line-height:1.85;
+}
+.mk-hero-about strong{color:#fff}
+.mk-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}
+.mk-stat{
+  background:var(--mk-card-2);border:1px solid var(--mk-line);border-radius:12px;padding:13px 15px;
+}
+.mk-stat b{display:block;font-size:22px;color:var(--mk-accent);letter-spacing:.5px}
+.mk-stat span{font-size:12.5px;color:var(--mk-muted)}
+.mk-hero-actions{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+.mk-btn{
+  display:inline-flex;align-items:center;gap:8px;border-radius:11px;padding:11px 20px;
+  font-size:14.5px;font-weight:600;cursor:pointer;border:1px solid transparent;transition:.18s;
+}
+.mk-btn-primary{background:var(--mk-accent);color:#062126}
+.mk-btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(56,224,200,.22)}
+.mk-btn-ghost{background:transparent;color:#d7e4f1;border-color:var(--mk-line-strong)}
+.mk-btn-ghost:hover{border-color:var(--mk-accent);color:#fff}
+.mk-hero-visual{position:relative}
+.mk-hero-visual img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px;border:1px solid var(--mk-line-strong)}
+.mk-hero-badge{
+  position:absolute;left:-14px;bottom:26px;background:rgba(8,24,42,.92);
+  border:1px solid rgba(56,224,200,.4);border-radius:12px;padding:11px 15px;backdrop-filter:blur(8px);
+  font-size:12.5px;color:#cfe6e1;
+}
+.mk-hero-badge b{display:block;color:var(--mk-accent);font-size:15px;margin-bottom:2px}
+
+/* ---------- 通用板块 ---------- */
+.mk-section{padding:56px 0;border-bottom:1px solid var(--mk-line)}
+.mk-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:26px}
+.mk-section-head h2{font-size:clamp(21px,2.6vw,28px)}
+.mk-section-head h2 span{color:var(--mk-accent)}
+.mk-section-head p{color:var(--mk-muted);font-size:14px;max-width:560px;margin-top:7px}
+.mk-kicker{font-size:12px;letter-spacing:2.2px;color:var(--mk-accent);text-transform:uppercase;margin-bottom:7px}
+
+/* 焦点大图 + 列表 */
+.mk-focus-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:26px;align-items:start}
+.mk-focus-main{background:var(--mk-card);border:1px solid var(--mk-line);border-radius:16px;overflow:hidden}
+.mk-focus-main img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.mk-focus-body{padding:20px 22px 24px}
+.mk-focus-body h3{font-size:20px;margin-bottom:9px}
+.mk-focus-body p{font-size:14px;color:#b7c6d6}
+.mk-meta{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--mk-muted);margin-top:14px}
+.mk-tag{
+  display:inline-block;font-size:11.5px;padding:2px 9px;border-radius:999px;
+  border:1px solid rgba(56,224,200,.34);color:var(--mk-accent);background:var(--mk-accent-soft);
+}
+.mk-side-list{display:grid;gap:12px}
+.mk-side-item{
+  background:var(--mk-card-2);border:1px solid var(--mk-line);border-radius:12px;padding:14px 16px;
+  transition:.18s;
+}
+.mk-side-item:hover{border-color:rgba(56,224,200,.45);transform:translateX(3px)}
+.mk-side-item h4{font-size:15px;margin-bottom:5px}
+.mk-side-item p{font-size:13px;color:#a9bccd}
+.mk-side-item .mk-meta{margin-top:8px}
+
+/* 视频条目列表 */
+.mk-video-list{display:grid;gap:14px}
+.mk-video-row{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:center;
+  background:var(--mk-card);border:1px solid var(--mk-line);border-radius:13px;padding:16px 18px;
+  transition:.18s;
+}
+.mk-video-row:hover{border-color:rgba(56,224,200,.4)}
+.mk-video-row h3{font-size:16.5px;margin-bottom:6px}
+.mk-video-row p{font-size:13.5px;color:#a9bccd}
+.mk-video-data{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--mk-muted);margin-top:9px}
+.mk-video-ops{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.mk-op{
+  background:var(--mk-card-2);border:1px solid var(--mk-line-strong);color:#c8d7e6;
+  border-radius:9px;padding:6px 11px;font-size:12.5px;cursor:pointer;transition:.16s;white-space:nowrap;
+}
+.mk-op:hover{border-color:var(--mk-accent);color:#fff}
+.mk-op.mk-on{background:var(--mk-accent-soft);border-color:rgba(56,224,200,.6);color:var(--mk-accent)}
+
+/* 专题 */
+.mk-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.mk-topic{
+  background:linear-gradient(180deg,var(--mk-card),var(--mk-card-2));
+  border:1px solid var(--mk-line);border-radius:15px;padding:20px;display:flex;flex-direction:column;gap:11px;
+}
+.mk-topic-status{font-size:11.5px;color:var(--mk-accent);letter-spacing:.8px}
+.mk-topic h3{font-size:17px}
+.mk-topic>p{font-size:13.5px;color:#a9bccd}
+.mk-topic ul{display:grid;gap:8px;margin-top:2px}
+.mk-topic li{font-size:13px;color:#c3d2e1;padding-left:14px;position:relative}
+.mk-topic li::before{content:"";position:absolute;left:0;top:9px;width:5px;height:5px;border-radius:50%;background:var(--mk-accent)}
+.mk-topic-img{border-radius:10px;overflow:hidden;border:1px solid var(--mk-line)}
+.mk-topic-img img{width:100%;aspect-ratio:16/10;object-fit:cover}
+
+/* 作者矩阵（双列简介） */
+.mk-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.mk-author{
+  display:grid;grid-template-columns:62px minmax(0,1fr);gap:15px;align-items:start;
+  background:var(--mk-card);border:1px solid var(--mk-line);border-radius:14px;padding:17px;
+  transition:.18s;
+}
+.mk-author:hover{border-color:rgba(56,224,200,.4)}
+.mk-avatar{
+  width:62px;height:62px;border-radius:50%;display:grid;place-items:center;
+  font-weight:800;font-size:20px;color:#062126;flex:0 0 auto;letter-spacing:0;
+}
+.mk-author h3{font-size:15.5px;margin-bottom:4px}
+.mk-author .mk-role{font-size:12.5px;color:var(--mk-accent)}
+.mk-author p{font-size:13px;color:#a9bccd;margin-top:7px;line-height:1.75}
+.mk-author-data{display:flex;gap:14px;font-size:12px;color:var(--mk-muted);margin-top:8px;flex-wrap:wrap}
+.mk-author-more{
+  margin-top:9px;background:transparent;border:0;color:var(--mk-accent);font-size:12.5px;
+  cursor:pointer;padding:0;text-decoration:underline;text-underline-offset:3px;
+}
+
+/* 数据榜单 */
+.mk-rank-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.mk-rank{
+  background:var(--mk-card-2);border:1px solid var(--mk-line);border-radius:14px;padding:18px;
+}
+.mk-rank h3{font-size:16px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.mk-rank h3 span{font-size:11px;color:#062126;background:var(--mk-accent);border-radius:5px;padding:1px 7px;font-weight:700}
+.mk-rank ol{display:grid;gap:11px}
+.mk-rank li{display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:10px;align-items:center;font-size:13.5px}
+.mk-rank .mk-rk-no{color:var(--mk-muted);font-weight:700;font-size:12.5px}
+.mk-rank .mk-rk-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#d7e4f1}
+.mk-rank .mk-rk-val{font-size:12px;color:var(--mk-accent);white-space:nowrap}
+
+/* 评价（双列短评） */
+.mk-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.mk-review{
+  background:var(--mk-card);border:1px solid var(--mk-line);border-left:3px solid rgba(56,224,200,.55);
+  border-radius:12px;padding:16px 18px;
+}
+.mk-review p{font-size:13.5px;color:#c3d2e1}
+.mk-review footer{margin-top:10px;font-size:12px;color:var(--mk-muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.mk-stars{color:#ffd166;letter-spacing:1px;font-size:12px}
+
+/* 解析正文 */
+.mk-analysis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 30px}
+.mk-analysis-article{background:var(--mk-card-2);border:1px solid var(--mk-line);border-radius:14px;padding:20px 22px}
+.mk-analysis-article h3{font-size:17px;margin-bottom:10px;color:#fff}
+.mk-analysis-article p{font-size:13.8px;color:#b3c4d5;line-height:1.9;margin-bottom:10px}
+.mk-analysis-article p:last-child{margin-bottom:0}
+
+/* 动态时间线 */
+.mk-news{display:grid;gap:0}
+.mk-news li{
+  display:grid;grid-template-columns:112px minmax(0,1fr);gap:18px;
+  padding:15px 0;border-bottom:1px dashed var(--mk-line);align-items:start;
+}
+.mk-news li:last-child{border-bottom:0}
+.mk-news time{font-size:12.5px;color:var(--mk-accent);letter-spacing:.5px;padding-top:2px}
+.mk-news h3{font-size:15px;margin-bottom:4px}
+.mk-news p{font-size:13px;color:#a9bccd}
+
+/* 合作 / FAQ / 联系 */
+.mk-partner-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.mk-partner{
+  background:var(--mk-card-2);border:1px solid var(--mk-line);border-radius:11px;
+  padding:16px;text-align:center;font-size:13.5px;color:#cfdded;transition:.18s;
+}
+.mk-partner:hover{border-color:rgba(56,224,200,.4);color:#fff}
+.mk-partner b{display:block;font-size:15px;margin-bottom:4px;color:#fff}
+.mk-partner span{font-size:11.5px;color:var(--mk-muted)}
+
+.mk-faq{display:grid;gap:10px}
+.mk-faq details{
+  background:var(--mk-card-2);border:1px solid var(--mk-line);border-radius:11px;padding:0 16px;
+  transition:.18s;
+}
+.mk-faq details[open]{border-color:rgba(56,224,200,.45);background:var(--mk-card)}
+.mk-faq summary{
+  cursor:pointer;padding:13px 0;font-size:14.5px;font-weight:600;list-style:none;
+  display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+.mk-faq summary::-webkit-details-marker{display:none}
+.mk-faq summary::after{content:"+";color:var(--mk-accent);font-size:18px;font-weight:700}
+.mk-faq details[open] summary::after{content:"–"}
+.mk-faq .mk-faq-body{padding:0 0 14px;font-size:13.5px;color:#a9bccd;line-height:1.85}
+
+.mk-contact-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.mk-contact-card{
+  background:var(--mk-card);border:1px solid var(--mk-line);border-radius:13px;padding:18px;
+}
+.mk-contact-card h3{font-size:15px;margin-bottom:7px}
+.mk-contact-card p{font-size:13px;color:#a9bccd}
+.mk-contact-card .mk-btn{margin-top:13px;padding:8px 14px;font-size:13px}
+
+/* 页脚 */
+.mk-footer{padding:46px 0 30px;background:var(--mk-deeper);border-top:1px solid var(--mk-line)}
+.mk-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px}
+.mk-footer h4{font-size:13.5px;color:#fff;margin-bottom:12px;letter-spacing:.5px}
+.mk-footer p,.mk-footer a{font-size:12.8px;color:var(--mk-muted);display:block;margin-bottom:8px}
+.mk-footer a:hover{color:var(--mk-accent)}
+.mk-footer-brand{font-size:16px;font-weight:800;color:#fff;margin-bottom:10px}
+.mk-footer-bottom{
+  margin-top:32px;padding-top:18px;border-top:1px solid var(--mk-line);
+  font-size:12px;color:#67788a;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+
+/* Toast / 弹窗 / 回顶 */
+.mk-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);opacity:0;pointer-events:none;
+  background:#052a30;border:1px solid rgba(56,224,200,.55);color:#c9f3ec;
+  padding:10px 20px;border-radius:11px;font-size:13.5px;z-index:200;transition:.28s;max-width:88vw;
+}
+.mk-toast.mk-show{opacity:1;transform:translate(-50%,0)}
+.mk-modal{
+  position:fixed;inset:0;background:rgba(4,12,22,.72);backdrop-filter:blur(4px);
+  display:none;place-items:center;z-index:150;padding:22px;
+}
+.mk-modal.mk-open{display:grid}
+.mk-modal-box{
+  background:linear-gradient(180deg,#122a42,#0c1e30);border:1px solid var(--mk-line-strong);
+  border-radius:16px;max-width:520px;width:100%;padding:24px;position:relative;max-height:84vh;overflow:auto;
+}
+.mk-modal-box h3{font-size:18px;margin-bottom:8px}
+.mk-modal-box p{font-size:13.5px;color:#a9bccd;margin-bottom:12px}
+.mk-modal-close{
+  position:absolute;right:14px;top:12px;background:transparent;border:0;color:#8ea3b8;
+  font-size:22px;cursor:pointer;line-height:1;
+}
+.mk-modal-close:hover{color:#fff}
+.mk-modal-box input,.mk-modal-box textarea{
+  width:100%;background:var(--mk-card-2);border:1px solid var(--mk-line-strong);color:var(--mk-text);
+  border-radius:10px;padding:9px 12px;font-size:13.5px;margin-bottom:11px;outline:none;
+}
+.mk-modal-box input:focus,.mk-modal-box textarea:focus{border-color:var(--mk-accent)}
+.mk-backtop{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:12px;
+  background:var(--mk-accent);color:#062126;border:0;font-size:18px;font-weight:800;cursor:pointer;
+  opacity:0;pointer-events:none;transition:.25s;z-index:90;
+}
+.mk-backtop.mk-show{opacity:1;pointer-events:auto}
+
+/* 动画 */
+.mk-reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.mk-reveal.mk-in{opacity:1;transform:none}
+
+@media (max-width:960px){
+  .mk-hero-grid{grid-template-columns:1fr;gap:30px}
+  .mk-hero-visual img{aspect-ratio:16/10}
+  .mk-focus-grid{grid-template-columns:1fr}
+  .mk-topic-grid,.mk-rank-grid{grid-template-columns:1fr}
+  .mk-analysis{grid-template-columns:1fr}
+  .mk-footer-grid{grid-template-columns:1fr 1fr}
+  .mk-partner-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mk-contact-grid{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .mk-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;background:rgba(9,22,37,.98);
+    border-bottom:1px solid var(--mk-line);padding:10px 16px 16px;flex-direction:column;gap:2px;
+  }
+  .mk-nav.mk-open{display:flex}
+  .mk-burger{display:block;margin-left:auto}
+  .mk-search{order:3;flex:1 1 100%;margin-bottom:8px}
+  .mk-search input{width:100%;flex:1}
+  .mk-header-inner{flex-wrap:wrap;gap:10px;padding-top:10px;padding-bottom:10px;position:relative}
+  .mk-author-grid,.mk-review-grid{grid-template-columns:1fr}
+  .mk-video-row{grid-template-columns:1fr}
+  .mk-video-ops{justify-content:flex-start}
+  .mk-stats{grid-template-columns:1fr}
+  .mk-news li{grid-template-columns:1fr;gap:4px}
+  .mk-section{padding:40px 0}
+  .mk-footer-grid{grid-template-columns:1fr}
+  :root{--mk-sticky:150px}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<div class="mk-sticky">
+  <div class="mk-announce">
+    <div class="mk-shell mk-announce-inner">
+      <span class="mk-announce-tag">官方发布</span>
+      <div class="mk-announce-track">
+        <span><b>11/22</b> 冬季原创影像征稿开启，投稿即进入首页推荐池</span>
+        <span><b>11/18</b> 创作者激励计划 3.0 上线，新增高清导出与版权存证</span>
+        <span><b>11/12</b> 品牌纪录片《日常的力量》第 2 季首发</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="mk-header">
+    <div class="mk-shell mk-header-inner">
+      <a class="mk-logo" href="#mk-top" aria-label="返回首页">
+        <span class="mk-logo-mark">16</span>
+        <span>www.16maokk.com<small>VIDEO OFFICIAL SITE</small></span>
+      </a>
+      <button class="mk-burger" id="mkBurger" aria-label="展开导航" aria-expanded="false">菜单</button>
+      <nav class="mk-nav" id="mkNav" aria-label="主导航">
+        <a href="#mk-top">首页</a>
+        <a href="#mk-focus">焦点</a>
+        <a href="#mk-topics">专题企划</a>
+        <a href="#mk-authors">创作者</a>
+        <a href="#mk-rank">榜单</a>
+        <a href="#mk-news">企业动态</a>
+        <a href="#mk-faq">帮助中心</a>
+      </nav>
+      <form class="mk-search" id="mkSearchForm" role="search">
+        <input type="search" id="mkSearchInput" placeholder="搜索视频、作者或专题" aria-label="站内搜索">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+    <div class="mk-shell mk-search-feedback" id="mkSearchFeedback" role="status" aria-live="polite"></div>
+  </header>
+</div>
+
+<main id="mk-top">
+
+  <!-- S2 品牌首屏：6:4 大幅图文 + 数据条 -->
+  <section class="mk-hero mk-reveal" aria-labelledby="mk-hero-title">
+    <div class="mk-shell mk-hero-grid">
+      <div>
+        <span class="mk-eyebrow">官网 · 品牌 · 内容生态</span>
+        <h1 id="mk-hero-title">www.16maokk.com：把<em>真实生活</em>拍成值得反复观看的视频</h1>
+        <p class="mk-hero-lede">我们是一家以原创高清影像为核心的视频品牌官网，深耕生活方式与人物故事垂直领域，为企业、创作者与观众搭建值得信赖的内容平台。</p>
+        <div class="mk-hero-about">
+          <strong>关于我们：</strong>www.16maokk.com 官方网站自创立以来坚持原创与正版内容，以专业制作流程和社区共创机制持续运营。平台汇聚纪录片、访谈、教程与生活记录等多元素材，为创作者提供上传、剪辑、分发与版权保护支持，为品牌提供可被长期检索的精品内容资产。我们相信，真实与温暖本身就是影响力，这也是企业长期投入内容生态的初心。
+        </div>
+        <div class="mk-stats">
+          <div class="mk-stat"><b id="mkStatVideos">12,800+</b><span>在库原创视频</span></div>
+          <div class="mk-stat"><b id="mkStatCreators">2,400+</b><span>认证创作者</span></div>
+          <div class="mk-stat"><b id="mkStatHours">9.6 万</b><span>累计播放小时/周</span></div>
+        </div>
+        <div class="mk-hero-actions">
+          <a class="mk-btn mk-btn-primary" href="#mk-focus">观看焦点内容</a>
+          <button class="mk-btn mk-btn-ghost" id="mkSubmitBtn" type="button">我要投稿</button>
+          <a class="mk-btn mk-btn-ghost" href="#mk-authors">认识创作者</a>
+        </div>
+      </div>
+      <div class="mk-hero-visual">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 600'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2312395c'/%3E%3Cstop offset='1' stop-color='%230a1e33'/%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%2338e0c8'/%3E%3Cstop offset='1' stop-color='%232f7dff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='600' fill='url(%23g1)'/%3E%3Ccircle cx='370' cy='120' r='96' fill='%2338e0c8' opacity='.22'/%3E%3Ccircle cx='96' cy='470' r='140' fill='%232f7dff' opacity='.18'/%3E%3Crect x='56' y='120' width='368' height='300' rx='16' fill='%230b2439' stroke='%2338e0c8' stroke-opacity='.5'/%3E%3Ccircle cx='240' cy='270' r='58' fill='url(%23g2)'/%3E%3Cpath d='M224 240l44 30-44 30z' fill='%23081c2c'/%3E%3Crect x='80' y='440' width='180' height='10' rx='5' fill='%2338e0c8' opacity='.8'/%3E%3Crect x='80' y='464' width='260' height='8' rx='4' fill='%23ffffff' opacity='.22'/%3E%3Crect x='80' y='484' width='210' height='8' rx='4' fill='%23ffffff' opacity='.14'/%3E%3C/svg%3E" alt="www.16maokk.com 品牌主视觉：深蓝背景中的播放画面与原创影像标识" width="480" height="600">
+        <div class="mk-hero-badge"><b>本周首播</b>城市夜行者 · 第 4 集</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 焦点内容：一幅重点大图 + 文字列表 -->
+  <section class="mk-section mk-reveal" id="mk-focus" aria-labelledby="mk-focus-title">
+    <div class="mk-shell">
+      <div class="mk-section-head">
+        <div>
+          <div class="mk-kicker">Focus</div>
+          <h2 id="mk-focus-title">焦点推荐 · <span>本周精品内容</span></h2>
+          <p>由编辑部与社区共同挑选，覆盖人物访谈、城市探索与实用教程，每一部都由专业团队完成高清调色与正版配乐授权。</p>
+        </div>
+        <a class="mk-btn mk-btn-ghost" href="#mk-videos">查看全部视频</a>
+      </div>
+
+      <div class="mk-focus-grid">
+        <article class="mk-focus-main">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230d3350'/%3E%3Cstop offset='.55' stop-color='%23124a5e'/%3E%3Cstop offset='1' stop-color='%230a1f33'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f1)'/%3E%3Ccircle cx='640' cy='110' r='72' fill='%23ffd166' opacity='.5'/%3E%3Cpath d='M0 340 Q180 260 340 320 T800 300 V450 H0Z' fill='%23071b2c' opacity='.85'/%3E%3Crect x='90' y='250' width='56' height='150' fill='%2313283d'/%3E%3Crect x='160' y='200' width='70' height='200' fill='%23182f47'/%3E%3Crect x='244' y='280' width='48' height='120' fill='%2313283d'/%3E%3Crect x='310' y='170' width='86' height='230' fill='%231b3550'/%3E%3Crect x='410' y='240' width='64' height='160' fill='%2313283d'/%3E%3Ccircle cx='400' cy='220' r='34' fill='%2338e0c8' opacity='.9'/%3E%3Cpath d='M390 204l24 16-24 16z' fill='%23081c2c'/%3E%3C/svg%3E" alt="《城市夜行者》纪录片封面：夜色中的楼群与播放按钮" width="800" height="450">
+          <div class="mk-focus-body">
+            <span class="mk-tag">纪录片 · 城市探索</span>
+            <h3>城市夜行者：凌晨三点，仍在营业的十家小店</h3>
+            <p>摄制组连续跟拍 21 天，记录城市在深夜里的另一套呼吸节奏。从修表铺到夜宵摊，从代驾司机到急诊护士，这部由官方网站出品的原创纪录长片，用真实的镜头语言回答“城市为什么让人舍不得睡”。</p>
+            <div class="mk-meta">
+              <span>作者：林舟影像</span><span>时长 26:40</span><span>播放 82.4 万</span><span>点赞 5.6 万</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="mk-side-list">
+          <article class="mk-side-item">
+            <h4>一双手的三十年：老裁缝的量体笔记</h4>
+            <p>人物访谈 · 从一把软尺讲起，谈手艺如何在高清镜头下被重新看见。</p>
+            <div class="mk-meta"><span class="mk-tag">人物</span><span>播放 41.2 万</span></div>
+          </article>
+          <article class="mk-side-item">
+            <h4>三分钟学会稳定器运镜：新手也能拍出电影感</h4>
+            <p>教程干货 · 六个基础动作拆解，附完整参数表与练习清单。</p>
+            <div class="mk-meta"><span class="mk-tag">教程</span><span>播放 37.8 万</span></div>
+          </article>
+          <article class="mk-side-item">
+            <h4>我把厨房改成了取景地：小空间布光实录</h4>
+            <p>创作幕后 · 12 平方米厨房里的三点布光方案与实拍对照。</p>
+            <div class="mk-meta"><span class="mk-tag">幕后</span><span>播放 29.5 万</span></div>
+          </article>
+          <article class="mk-side-item">
+            <h4>城市的清晨属于谁：菜市场六点钟</h4>
+            <p>日常记录 · 一条没有旁白的清晨长镜头，全网收藏 2.1 万。</p>
+            <div class="mk-meta"><span class="mk-tag">生活</span><span>播放 25.1 万</span></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 视频条目列表 -->
+  <section class="mk-section mk-reveal" id="mk-videos" aria-labelledby="mk-videos-title">
+    <div class="mk-shell">
+      <div class="mk-section-head">
+        <div>
+          <div class="mk-kicker">Library</div>
+          <h2 id="mk-videos-title">热门视频流 · <span>官方发布与社区共创</span></h2>
+          <p>平台坚持原创与正版审核，所有条目均标注作者、时长与互动数据，方便你按兴趣快速筛选。</p>
+        </div>
+      </div>
+
+      <div class="mk-video-list">
+        <article class="mk-video-row">
+          <div>
+            <h3>一杯手冲的十二个细节：从水温到注水节奏</h3>
+            <p>经验分享 · 咖啡师阿野把三年吧台经验压缩成十二个可复用的动作，附常见失误对照表。</p>
+            <div class="mk-video-data"><span class="mk-tag">生活</span><span>作者：阿野的日常</span><span>时长 14:22</span><span class="mk-like-count" data-base="18200">播放 18.2 万</span></div>
+          </div>
+          <div class="mk-video-ops">
+            <button class="mk-op mk-like" data-count="18200" type="button" aria-pressed="false">点赞</button>
+            <button class="mk-op mk-fav" type="button" aria-pressed="false">收藏</button>
+            <button class="mk-op mk-copy" data-title="一杯手冲的十二个细节：从水温到注水节奏" type="button">复制链接</button>
+          </div>
+        </article>
+
+        <article class="mk-video-row">
+          <div>
+            <h3>租房改造 7 天：把 32 平米拍成样板间</h3>
+            <p>家居收纳 · 预算 4800 元，全流程记录拆改、软装与收纳动线设计，附采购清单。</p>
+            <div class="mk-video-data"><span class="mk-tag">家居</span><span>作者：小满的家</span><span>时长 21:05</span><span class="mk-like-count" data-base="26400">播放 26.4 万</span></div>
+          </div>
+          <div class="mk-video-ops">
+            <button class="mk-op mk-like" data-count="26400" type="button" aria-pressed="false">点赞</button>
+            <button class="mk-op mk-fav" type="button" aria-pressed="false">收藏</button>
+            <button class="mk-op mk-copy" data-title="租房改造 7 天：把 32 平米拍成样板间" type="button">复制链接</button>
+          </div>
+        </article>
+
+        <article class="mk-video-row">
+          <div>
+            <h3>深度测评：三款主流相机在弱光下的真实差异</h3>
+            <p>深度测评 · 同一场景、同一参数、同一调色流程，逐帧对比噪点、宽容度与色彩倾向。</p>
+            <div class="mk-video-data"><span class="mk-tag">测评</span><span>作者：影像实验室</span><span>时长 18:47</span><span class="mk-like-count" data-base="31900">播放 31.9 万</span></div>
+          </div>
+          <div class="mk-video-ops">
+            <button class="mk-op mk-like" data-count="31900" type="button" aria-pressed="false">点赞</button>
+            <button class="mk-op mk-fav" type="button" aria-pressed="false">收藏</button>
+            <button class="mk-op mk-copy" data-title="深度测评：三款主流相机在弱光下的真实差异" type="button">复制链接</button>
+          </div>
+        </article>
+
+        <article class="mk-video-row">
+          <div>
+            <h3>山野露营的第一夜：装备清单与安全边界</h3>
+            <p>户外活动 · 从选址到收营的完整流程，重点讲风雨天气下的应急处理。</p>
+            <div class="mk-video-data"><span class="mk-tag">户外</span><span>作者：北纬三十七</span><span>时长 23:10</span><span class="mk-like-count" data-base="14700">播放 14.7 万</span></div>
+          </div>
+          <div class="mk-video-ops">
+            <button class="mk-op mk-like" data-count="14700" type="button" aria-pressed="false">点赞</button>
+            <button class="mk-op mk-fav" type="button" aria-pressed="false">收藏</button>
+            <button class="mk-op mk-copy" data-title="山野露营的第一夜：装备清单与安全边界" type="button">复制链接</button>
+          </div>
+        </article>
+
+        <article class="mk-video-row">
+          <div>
+            <h3>剪辑节奏课：三分钟讲清卡点与情绪曲线</h3>
+            <p>教程干货 · 用同一段素材做出三种节奏版本，直观呈现节奏对叙事的改变。</p>
+            <div class="mk-video-data"><span class="mk-tag">教程</span><span>作者：剪辑师老周</span><span>时长 12:36</span><span class="mk-like-count" data-base="22100">播放 22.1 万</span></div>
+          </div>
+          <div class="mk-video-ops">
+            <button class="mk-op mk-like" data-count="22100" type="button" aria-pressed="false">点赞</button>
+            <button class="mk-op mk-fav" type="button" aria-pressed="false">收藏</button>
+            <button class="mk-op mk-copy" data-title="剪辑节奏课：三分钟讲清卡点与情绪曲线" type="button">复制链接</button>
+          </div>
+        </article>
+
+        <article class="mk-video-row">
+          <div>
+            <h3>在菜市场拍人像：自然光下的三个机位</h3>
+            <p>实用技巧 · 不打扰他人的前提下，如何用长焦与侧逆光拍出生活质感。</p>
+            <div class="mk-video-data"><span class="mk-tag">技巧</span><span>作者：林舟影像</span><span>时长 16:08</span><span class="mk-like-count" data-base="19800">播放 19.8 万</span></div>
+          </div>
+          <div class="mk-video-ops">
+            <button class="mk-op mk-like" data-count="19800" type="button" aria-pressed="false">点赞</button>
+            <button class="mk-op mk-fav" type="button" aria-pressed="false">收藏</button>
+            <button class="mk-op mk-copy" data-title="在菜市场拍人像：自然光下的三个机位" type="button">复制链接</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="mk-section mk-reveal" id="mk-topics" aria-labelledby="mk-topics-title">
+    <div class="mk-shell">
+      <div class="mk-section-head">
+        <div>
+          <div class="mk-kicker">Series</div>
+          <h2 id="mk-topics-title">专题企划 · <span>品牌故事与长期主义</span></h2>
+          <p>每个专题由官网编辑团队策划，持续更新，鼓励创作者围绕同一主题提交作品，形成可被检索的内容资产。</p>
+        </div>
+      </div>
+
+      <div class="mk-topic-grid">
+        <article class="mk-topic">
+          <div class="mk-topic-img">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Cdefs%3E%3ClinearGradient id='t1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23224a3d'/%3E%3Cstop offset='1' stop-color='%230c2430'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='400' fill='url(%23t1)'/%3E%3Ccircle cx='150' cy='300' r='120' fill='%2342c48f' opacity='.28'/%3E%3Cpath d='M0 300 Q160 200 320 280 T640 250 V400 H0Z' fill='%23081c22'/%3E%3Crect x='250' y='120' width='140' height='180' rx='10' fill='%23123a3a' stroke='%2342c48f' stroke-opacity='.6'/%3E%3Cpath d='M290 180h60M290 210h60M290 240h40' stroke='%2342c48f' stroke-width='6' stroke-linecap='round' opacity='.8'/%3E%3C/svg%3E" alt="专题《日常的力量》封面：手写笔记与绿色光影" width="640" height="400">
+          </div>
+          <span class="mk-topic-status">更新中 · 已上线 8 集</span>
+          <h3>日常的力量：普通人的一百种坚持</h3>
+          <p>我们把镜头交给普通人，记录那些不会被写进新闻、却支撑起生活的坚持。</p>
+          <ul>
+            <li>第 8 集：在社区做了 11 年图书管理员的她</li>
+            <li>第 7 集：每天四点起床的面包房主理人</li>
+            <li>第 6 集：为老人拍遗照的公益摄影师</li>
+          </ul>
+        </article>
+
+        <article class="mk-topic">
+          <span class="mk-topic-status">征稿中 · 截止 12/20</span>
+          <h3>我的第一支原创短片</h3>
+          <p>面向所有新手创作者，官网提供脚本模板、拍摄清单与官方评审反馈。</p>
+          <ul>
+            <li>投稿即可获得官方高清素材包与配乐授权</li>
+            <li>入选作品进入首页焦点位并获得创作基金</li>
+            <li>评委包含纪录片导演与平台内容主编</li>
+          </ul>
+        </article>
+
+        <article class="mk-topic">
+          <span class="mk-topic-status">已完成 · 12 集全</span>
+          <h3>手艺人的高清档案</h3>
+          <p>用电影级镜头保存正在消失的手艺，每一集都是一次正式的影像存档。</p>
+          <ul>
+            <li>裁缝、木作、锔瓷、制笔、蓝染、打铁</li>
+            <li>全部采用 4K 原生拍摄与正版音乐授权</li>
+            <li>配套图文工艺图解可免费下载</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词深度解析（>=800字） -->
+  <section class="mk-section mk-reveal" id="mk-analysis" aria-labelledby="mk-analysis-title">
+    <div class="mk-shell">
+      <div class="mk-section-head">
+        <div>
+          <div class="mk-kicker">Insight</div>
+          <h2 id="mk-analysis-title">深度解析 · <span>www.16maokk.com 为什么值得长期关注</span></h2>
+          <p>从内容生产、社区生态到品牌价值，四个角度拆解一个视频品牌官网的长期主义。</p>
+        </div>
+      </div>
+
+      <div class="mk-analysis">
+        <article class="mk-analysis-article">
+          <h3>内容生产：从灵感到成片的完整链路</h3>
+          <p>www.16maokk.com 并不是一个简单的视频集合页，而是一条完整的内容生产链路。创作者在投稿入口提交脚本后，官方编辑团队会在三个工作日内给出选题建议与拍摄清单；素材进入平台后，可调用剪辑模板、调色参考与正版配乐库，减少新手在技术环节上的时间消耗。我们观察到，一个创作者从第一次上传到形成稳定风格，平均需要经历七到十次完整发布，因此平台把“迭代成本”作为核心指标，尽量让每次试错都更轻。</p>
+          <p>在清晰度与工业化标准上，官网提供 1080P 与 4K 两套导出预设，并在上传时自动校验码率与音画同步。对品牌方而言，这意味着投放内容不再是“一次性消耗”，而是能够进入长期检索的精品内容资产；对观众而言，意味着点开任意一条推荐，都能获得稳定的观看体验。我们坚持原创与正版，对搬运与二次剪辑内容设置明确边界，这也是平台口碑得以积累的基础。</p>
+        </article>
+
+        <article class="mk-analysis-article">
+          <h3>社区生态：让创作者与观众彼此看见</h3>
+          <p>社区不是评论区数量的堆叠，而是关系密度的积累。平台设置了作者主页、作品合集、创作日志与同行互评四类入口，让创作者的努力被具体地看见。观众可以收藏单条视频，也可以订阅某位作者的连载专题；创作者可以看到同行对镜头语言的具体反馈，而不仅是简单的点赞。这种结构让“陪伴”与“成长”成为可被记录的过程，而不是抽象的口号。</p>
+          <p>我们每月组织一次线上看片会，由官网编辑主持，邀请三到五位创作者拆解自己的作品。看片会不设门槛，报名后即可获得回放与文字纪要。过去一年，参与看片会的创作者中，有超过四成在三个月内完成了自己的第一部系列作品。社区的价值正在于此：它让独立的个体获得持续的反馈与真实的连接。</p>
+        </article>
+
+        <article class="mk-analysis-article">
+          <h3>品牌价值：企业级内容平台的长期运营</h3>
+          <p>作为一个持续运营的视频品牌官网，我们更在意十年后还能被检索到的内容，而不是一周内的流量峰值。平台对企业开放品牌故事定制、行业观察专栏与创作者共创三类合作方式，帮助品牌以更真实的方式进入社区语境。我们拒绝生硬的植入，要求所有商业内容都标注清楚，并提供与平台原创内容一致的制作标准。</p>
+          <p>在垂直领域深耕意味着取舍。我们暂时不做全品类覆盖，而是把资源集中在人物、生活方式与影像技艺三个方向，把每一类内容做深、做透。行业领先不是自我宣称，而是由创作者留存率、内容完播率与用户复访率共同构成的指标。我们把这些数据按季度公开在更新日志里，接受社区监督，这也是社会责任的一部分。</p>
+        </article>
+
+        <article class="mk-analysis-article">
+          <h3>使用价值：观众与品牌方分别得到什么</h3>
+          <p>对观众来说，官网提供清晰的分类导航、可按标签筛选的视频索引、可收藏的作者名录与持续更新的榜单。你可以在十分钟内找到适合当下心情的内容，也可以沿着一位作者的成长轨迹，从第一支粗糙的短片看到最新的成熟作品。这种连续性，是短视频信息流难以提供的体验。</p>
+          <p>对品牌方来说，平台提供从选题策划、拍摄执行到分发与数据复盘的一站式服务。我们不承诺虚高的曝光数字，而是给出可核验的完播率、互动率与用户画像。所有合作内容都会进入官网的内容库并长期保留，形成可被反复引用的品牌资产。值得信赖，来自每一次如实的交付。用户至上，体现在我们愿意为一条评论的真实反馈去修改下一个专题的策划方向。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵（双列简介） -->
+  <section class="mk-section mk-reveal" id="mk-authors" aria-labelledby="mk-authors-title">
+    <div class="mk-shell">
+      <div class="mk-section-head">
+        <div>
+          <div class="mk-kicker">Creators</div>
+          <h2 id="mk-authors-title">创作者矩阵 · <span>平台上真实的手与眼</span></h2>
+          <p>他们来自不同城市与行业，共同点是愿意为一支片子反复打磨。点击“简介”可查看完整档案。</p>
+        </div>
+      </div>
+
+      <div class="mk-author-grid">
+        <article class="mk-author">
+          <div class="mk-avatar" style="background:linear-gradient(140deg,#38e0c8,#2f7dff)">林</div>
+          <div>
+            <h3>林舟影像</h3>
+            <div class="mk-role">纪录片 · 城市探索</div>
+            <p>前新闻摄影记者，擅长在有限光线下完成叙事。习惯先蹲点三天再开机，追求不打扰的观察式拍摄，作品常以长镜头收尾，让观众自己完成情绪落点。</p>
+            <div class="mk-author-data"><span>作品 86</span><span>粉丝 24.1 万</span><span>认证创作者</span></div>
+            <button class="mk-author-more" data-author="林舟影像" type="button">简介</button>
+          </div>
+        </article>
+
+        <article class="mk-author">
+          <div class="mk-avatar" style="background:linear-gradient(140deg,#ffd166,#f08a4b)">阿</div>
+          <div>
+            <h3>阿野的日常</h3>
+            <div class="mk-role">生活方式 · 咖啡与手作</div>
+            <p>在城南经营一家只有八个座位的小咖啡馆，视频多为吧台第一视角。她认为日常记录的价值在于“不过度修饰”，因此坚持用自然声与现场光完成大部分拍摄。</p>
+            <div class="mk-author-data"><span>作品 142</span><span>粉丝 18.7 万</span><span>持续更新</span></div>
+            <button class="mk-author-more" data-author="阿野的日常" type="button">简介</button>
+          </div>
+        </article>
+
+        <article class="mk-author">
+          <div class="mk-avatar" style="background:linear-gradient(140deg,#8fb8ff,#5b6ee1)">周</div>
+          <div>
+            <h3>剪辑师老周</h3>
+            <div class="mk-role">教程干货 · 后期剪辑</div>
+            <p>从业十二年的剪辑指导，讲过上百堂课。他的教程以“能立刻用上”为标准，每条视频都配可下载的工程文件与参数表，被许多新手称为入门第一站。</p>
+            <div class="mk-author-data"><span>作品 210</span><span>粉丝 31.5 万</span><span>官方讲师</span></div>
+            <button class="mk-author-more" data-author="剪辑师老周" type="button">简介</button>
+          </div>
+        </article>
+
+        <article class="mk-author">
+          <div class="mk-avatar" style="background:linear-gradient(140deg,#9ee7b8,#42c48f)">北</div>
+          <div>
+            <h3>北纬三十七</h3>
+            <div class="mk-role">户外活动 · 露营与徒步</div>
+            <p>常年在山野里拍摄，强调安全意识与无痕山林。他的视频不追求刺激画面，而是把路线难度、装备重量与天气风险讲清楚，帮助更多人安全地走进自然。</p>
+            <div class="mk-author-data"><span>作品 97</span><span>粉丝 12.9 万</span><span>签约创作者</span></div>
+            <button class="mk-author-more" data-author="北纬三十七" type="button">简介</button>
+          </div>
+        </article>
+
+        <article class="mk-author">
+          <div class="mk-avatar" style="background:linear-gradient(140deg,#f9a8c9,#c06ee1)">满</div>
+          <div>
+            <h3>小满的家</h3>
+            <div class="mk-role">家居收纳 · 空间改造</div>
+            <p>室内设计师出身，专注小户型改造。她的视频强调预算透明与可复现，会列出每一件物品的价格与购买理由，也会坦诚展示改造失败的部分。</p>
+            <div class="mk-author-data"><span>作品 63</span><span>粉丝 16.3 万</span><span>口碑创作者</span></div>
+            <button class="mk-author-more" data-author="小满的家" type="button">简介</button>
+          </div>
+        </article>
+
+        <article class="mk-author">
+          <div class="mk-avatar" style="background:linear-gradient(140deg,#ffb27a,#e8604c)">影</div>
+          <div>
+            <h3>影像实验室</h3>
+            <div class="mk-role">深度测评 · 器材研究</div>
+            <p>由三位工程师组成的测评小组，坚持在同一条件下完成对照实验。他们不接器材软广，所有结论都附原始素材与测试方法，供观众自行验证。</p>
+            <div class="mk-author-data"><span>作品 54</span><span>粉丝 21.8 万</span><span>独立测评</span></div>
+            <button class="mk-author-more" data-author="影像实验室" type="button">简介</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 数据榜单 -->
+  <section class="mk-section mk-reveal" id="mk-rank" aria-labelledby="mk-rank-title">
+    <div class="mk-shell">
+      <div class="mk-section-head">
+        <div>
+          <div class="mk-kicker">Ranking</div>
+          <h2 id="mk-rank-title">数据榜单 · <span>社区真实热度</span></h2>
+          <p>榜单每十二小时更新，统计口径公开在帮助中心。我们不购买流量，也不人为干预排序。</p>
+        </div>
+      </div>
+
+      <div class="mk-rank-grid">
+        <div class="mk-rank">
+          <h3><span>热</span>热度榜</h3>
+          <ol>
+            <li><span class="mk-rk-no">01</span><span class="mk-rk-name">城市夜行者 · 第 4 集</span><span class="mk-rk-val">82.4 万</span></li>
+            <li><span class="mk-rk-no">02</span><span class="mk-rk-name">深度测评：弱光相机对照</span><span class="mk-rk-val">31.9 万</span></li>
+            <li><span class="mk-rk-no">03</span><span class="mk-rk-name">租房改造 7 天全记录</span><span class="mk-rk-val">26.4 万</span></li>
+            <li><span class="mk-rk-no">04</span><span class="mk-rk-name">剪辑节奏课 · 情绪曲线</span><span class="mk-rk-val">22.1 万</span></li>
+            <li><span class="mk-rk-no">05</span><span class="mk-rk-name">菜市场人像的三个机位</span><span class="mk-rk-val">19.8 万</span></li>
+          </ol>
+        </div>
+        <div class="mk-rank">
+          <h3><span>新</span>新人榜</h3>
+          <ol>
+            <li><span class="mk-rk-no">01</span><span class="mk-rk-name">在山里住一晚</span><span class="mk-rk-val">+1.2 万</span></li>
+            <li><span class="mk-rk-no">02</span><span class="mk-rk-name">爷爷的木工台</span><span class="mk-rk-val">+9800</span></li>
+            <li><span class="mk-rk-no">03</span><span class="mk-rk-name">早餐摊的第七年</span><span class="mk-rk-val">+8600</span></li>
+            <li><span class="mk-rk-no">04</span><span class="mk-rk-name">我的第一支胶片短片</span><span class="mk-rk-val">+7200</span></li>
+            <li><span class="mk-rk-no">05</span><span class="mk-rk-name">楼下修表铺</span><span class="mk-rk-val">+6400</span></li>
+          </ol>
+        </div>
+        <div class="mk-rank">
+          <h3><span>口</span>口碑榜</h3>
+          <ol>
+            <li><span class="mk-rk-no">01</span><span class="mk-rk-name">手艺人的高清档案</span><span class="mk-rk-val">9.6 分</span></li>
+            <li><span class="mk-rk-no">02</span><span class="mk-rk-name">日常的力量专题</span><span class="mk-rk-val">9.4 分</span></li>
+            <li><span class="mk-rk-no">03</span><span class="mk-rk-name">一杯手冲的十二个细节</span><span class="mk-rk-val">9.3 分</span></li>
+            <li><span class="mk-rk-no">04</span><span class="mk-rk-name">山野露营的第一夜</span><span class="mk-rk-val">9.1 分</span></li>
+            <li><span class="mk-rk-no">05</span><span class="mk-rk-name">我把厨房改成了取景地</span><span class="mk-rk-val">9.0 分</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 用户评价（双列短评） -->
+  <section class="mk-section mk-reveal" id="mk-reviews" aria-labelledby="mk-reviews-title">
+    <div class="mk-shell">
+      <div class="mk-section-head">
+        <div>
+          <div class="mk-kicker">Voice</div>
+          <h2 id="mk-reviews-title">用户评价 · <span>他们怎么说这个平台</span></h2>
+          <p>以下评价来自创作者、观众与合作品牌，内容未经修饰，仅做长度整理。</p>
+        </div>
+      </div>
+
+      <div class="mk-review-grid">
+        <blockquote class="mk-review">
+          <p>“第一次有平台把我的拍摄清单整理成模板，照着做就少走很多弯路。看完自己的第一支片子时，确实有点激动。”</p>
+          <footer><span class="mk-stars">★★★★★</span><span>创作者 · 小何</span></footer>
+        </blockquote>
+        <blockquote class="mk-review">
+          <p>“纪录片更新稳定，画质和声音都很扎实。晚上下班后看一集，比刷信息流舒服太多。”</p>
+          <footer><span class="mk-stars">★★★★★</span><span>观众 · 陈女士</span></footer>
+        </blockquote>
+        <blockquote class="mk-review">
+          <p>“测评能给出原始素材，这点很难得。我按他们的方法复测了一次，结论基本一致。”</p>
+          <footer><span class="mk-stars">★★★★☆</span><span>观众 · 老赵</span></footer>
+        </blockquote>
+        <blockquote class="mk-review">
+          <p>“作为品牌方，最满意的是他们不夸大数字。复盘报告很细，连评论区情绪都做了分类。”</p>
+          <footer><span class="mk-stars">★★★★★</span><span>合作品牌 · 市场负责人</span></footer>
+        </blockquote>
+        <blockquote class="mk-review">
+          <p>“希望以后能多做一些幕后花絮，器材和布光部分我还想看更细的。”</p>
+          <footer><span class="mk-stars">★★★★☆</span><span>观众 · 阿岚</span></footer>
+        </blockquote>
+        <blockquote class="mk-review">
+          <p>“看片会真的有用。我提的一个转场问题，编辑回了两百多字，还给了参考片单。”</p>
+          <footer><span class="mk-stars">★★★★★</span><span>创作者 · 徐一</span></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 企业动态 -->
+  <section class="mk-section mk-reveal" id="mk-news" aria-labelledby="mk-news-title">
+    <div class="mk-shell">
+      <div class="mk-section-head">
+        <div>
+          <div class="mk-kicker">Updates</div>
+          <h2 id="mk-news-title">企业动态 · <span>官方发布与更新日志</span></h2>
+          <p>平台的重要变化都会在这里公开，包括功能上线、规则调整与季度数据。</p>
+        </div>
+      </div>
+
+      <ul class="mk-news">
+        <li>
+          <time datetime="2026-11-22">2026/11/22</time>
+          <div>
+            <h3>冬季原创影像征稿正式开启</h3>
+            <p>面向所有注册创作者开放，投稿即进入首页推荐池，入选作品将获得创作基金与官方首页展示位。</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-18">2026/11/18</time>
+          <div>
+            <h3>创作者激励计划 3.0 上线</h3>
+            <p>新增高清导出、版权存证与收益明细看板，所有条款已在帮助中心公示，欢迎社区监督。</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-12">2026/11/12</time>
+          <div>
+            <h3>品牌纪录片《日常的力量》第二季首发</h3>
+            <p>全季共八集，采用 4K 原生拍摄，配乐均为正版授权，支持高清离线观看。</p>
+          </div>
+        </li>
+        <li>
+          <time datetime="2026-11-05">2026/11/05</time>
+          <div>
+            <h3>第三季度社区数据公开</h3>
+            <p>创作者留存率 68%，内容完播率 41%，用户复访率 53%，完整报告可在帮助中心下载。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- S7 合作品牌 + FAQ + 联系投稿 -->
+  <section class="mk-section mk-reveal" id="mk-partners" aria-labelledby="mk-partners-title">
+    <div class="mk-shell">
+      <div class="mk-section-head">
+        <div>
+          <div class="mk-kicker">Partners</div>
+          <h2 id="mk-partners-title">合作品牌 · <span>一起把内容做得更扎实</span></h2>
+          <p>我们与不同领域的伙伴长期协作，所有商业内容均明确标注，制作标准与原创内容一致。</p>
+        </div>
+      </div>
+
+      <div class="mk-partner-grid">
+        <div class="mk-partner"><b>光年相机</b><span>器材支持</span></div>
+        <div class="mk-partner"><b>青野咖啡</b><span>场景合作</span></div>
+        <div class="mk-partner"><b>慢行户外</b><span>专题共创</span></div>
+        <div class="mk-partner"><b>纸间文具</b><span>周边联名</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mk-section mk-reveal" id="mk-faq" aria-labelledby="mk-faq-title">
+    <div class="mk-shell">
+      <div class="mk-section-head">
+        <div>
+          <div class="mk-kicker">Help</div>
+          <h2 id="mk-faq-title">帮助中心 · <span>投稿与观看常见问题</span></h2>
+          <p>没有找到答案？可通过下方联系入口提交问题，编辑团队会在两个工作日内回复。</p>
+        </div>
+      </div>
+
+      <div class="mk-faq">
+        <details>
+          <summary>如何向官网投稿自己的原创视频？</summary>
+          <div class="mk-faq-body">注册账号后进入“创作中心”，完成实名认证即可上传。首次投稿建议先提交脚本或大纲，编辑会给出拍摄建议。所有作品需为原创或已获得完整授权，审核通常在三个工作日内完成。</div>
+        </details>
+        <details>
+          <summary>平台对视频清晰度和格式有什么要求？</summary>
+          <div class="mk-faq-body">推荐 1080P 及以上分辨率，码率不低于 8Mbps，帧率 25 或 30 帧。支持 MP4 与 MOV 格式。若使用 4K 素材，上传时会自动生成多档清晰度，观众可自行切换。</div>
+        </details>
+        <details>
+          <summary>作品被搬运或盗用怎么办？</summary>
+          <div class="mk-faq-body">可在作品页点击“举报”，提交原始素材与发布记录。平台设有版权专员，核实后会下架侵权内容，并协助创作者进行后续维权。我们坚持正版与原创，对搬运行为零容忍。</div>
+        </details>
+        <details>
+          <summary>创作者激励计划的收益如何计算？</summary>
+          <div class="mk-faq-body">收益由有效播放、完播率与互动质量共同决定，具体系数在帮助中心公示。每月 10 日结算上月收益，明细可在创作中心查看。平台不设隐藏扣费项。</div>
+        </details>
+        <details>
+          <summary>品牌方如何与平台合作定制内容？</summary>
+          <div class="mk-faq-body">请通过“联系与投稿”入口提交合作意向，说明行业、目标与预算区间。我们会先给出选题与创作者匹配建议，确认后再进入制作流程。所有合作内容均标注“品牌合作”。</div>
+        </details>
+        <details>
+          <summary>可以在平台下载视频素材吗？</summary>
+          <div class="mk-faq-body">官方发布的教程类内容提供配套素材包下载，仅限学习用途。其他作品需获得作者授权后方可使用。下载入口在视频页的“资源”区域，部分素材需登录后获取。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="mk-section mk-reveal" id="mk-contact" aria-labelledby="mk-contact-title">
+    <div class="mk-shell">
+      <div class="mk-section-head">
+        <div>
+          <div class="mk-kicker">Contact</div>
+          <h2 id="mk-contact-title">联系与投稿 · <span>把你的故事交给镜头</span></h2>
+          <p>无论是作品投稿、合作咨询还是功能建议，我们都愿意认真读完每一条来信。</p>
+        </div>
+      </div>
+
+      <div class="mk-contact-grid">
+        <div class="mk-contact-card">
+          <h3>作品投稿</h3>
+          <p>提交作品链接或脚本大纲，编辑会在三个工作日内回复。首次投稿可获得拍摄清单模板。</p>
+          <button class="mk-btn mk-btn-primary" id="mkSubmitBtn2" type="button">进入投稿</button>
+        </div>
+        <div class="mk-contact-card">
+          <h3>品牌合作</h3>
+          <p>品牌故事定制、专题共创与创作者联动，我们提供从策划到分发的完整方案。</p>
+          <button class="mk-btn mk-btn-ghost mk-coop" type="button">咨询合作</button>
+        </div>
+        <div class="mk-contact-card">
+          <h3>问题反馈</h3>
+          <p>使用中遇到问题，或对内容有不同看法，欢迎直接告诉我们，每条反馈都会被记录。</p>
+          <button class="mk-btn mk-btn-ghost mk-report" type="button">提交反馈</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="mk-footer">
+  <div class="mk-shell">
+    <div class="mk-footer-grid">
+      <div>
+        <div class="mk-footer-brand">www.16maokk.com</div>
+        <p>原创高清视频品牌官方网站，持续运营中。我们致力于为企业与创作者搭建值得信赖的内容生态，深耕人物、生活方式与影像技艺垂直领域。</p>
+        <p>© 2026 www.16maokk.com 版权所有</p>
+        <p>备案号：京ICP备2026000000号-1</p>
+      </div>
+      <div>
+        <h4>浏览</h4>
+        <a href="#mk-focus">焦点推荐</a>
+        <a href="#mk-videos">热门视频</a>
+        <a href="#mk-topics">专题企划</a>
+        <a href="#mk-rank">数据榜单</a>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <a href="#mk-authors">创作者矩阵</a>
+        <a href="#mk-contact">作品投稿</a>
+        <a href="#mk-faq">帮助中心</a>
+        <a href="#mk-news">企业动态</a>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <a href="#mk-analysis">品牌解析</a>
+        <a href="#mk-partners">合作品牌</a>
+        <a href="#mk-reviews">用户评价</a>
+        <a href="#mk-top">返回顶部</a>
+      </div>
+    </div>
+    <div class="mk-footer-bottom">
+      <span>官方网站 · 官方发布 · 精品内容持续更新</span>
+      <span>内容均为原创或已获授权，转载请注明出处</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mk-toast" id="mkToast" role="status" aria-live="polite"></div>
+
+<div class="mk-modal" id="mkModal" role="dialog" aria-modal="true" aria-labelledby="mkModalTitle">
+  <div class="mk-modal-box">
+    <button class="mk-modal-close" id="mkModalClose" aria-label="关闭弹窗">×</button>
+    <h3 id="mkModalTitle">投稿入口</h3>
+    <p id="mkModalDesc">填写作品信息，编辑团队会在三个工作日内回复。</p>
+    <div id="mkModalFields">
+      <input type="text" id="mkFieldName" placeholder="你的昵称" aria-label="昵称">
+      <input type="text" id="mkFieldTitle" placeholder="作品标题" aria-label="作品标题">
+      <textarea id="mkFieldDesc" rows="3" placeholder="一句话介绍你的作品" aria-label="作品介绍"></textarea>
+    </div>
+    <button class="mk-btn mk-btn-primary" id="mkModalSend" type="button">提交</button>
+  </div>
+</div>
+
+<button class="mk-backtop" id="mkBackTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  var $ = function(s,c){ return (c||document).querySelector(s); };
+  var $$ = function(s,c){ return Array.prototype.slice.call((c||document).querySelectorAll(s)); };
+
+  /* ---------- Toast ---------- */
+  var toastEl = $("#mkToast");
+  var toastTimer = null;
+  function toast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add("mk-show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("mk-show"); }, 2200);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = $("#mkBurger"), nav = $("#mkNav");
+  if(burger && nav){
+    burger.addEventListener("click", function(){
+      var open = nav.classList.toggle("mk-open");
+      burger.setAttribute("aria-expanded", open ? "true" : "false");
+      burger.textContent = open ? "收起" : "菜单";
+    });
+    $$("a", nav).forEach(function(a){
+      a.addEventListener("click", function(){
+        nav.classList.remove("mk-open");
+        burger.setAttribute("aria-expanded","false");
+        burger.textContent = "菜单";
+      });
+    });
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchForm = $("#mkSearchForm"), searchInput = $("#mkSearchInput"), searchFb = $("#mkSearchFeedback");
+  var searchPool = [
+    "城市夜行者","老裁缝的量体笔记","稳定器运镜","厨房布光","手冲咖啡","租房改造",
+    "弱光相机测评","山野露营","剪辑节奏","菜市场人像","手艺人的高清档案","日常的力量"
+  ];
+  function doSearch(q){
+    q = (q||"").trim();
+    if(!searchFb) return;
+    if(!q){
+      searchFb.textContent = "请输入关键词，例如“手冲”“测评”或作者昵称。";
+      searchFb.classList.add("mk-show");
+      return;
+    }
+    var hits = searchPool.filter(function(t){ return t.indexOf(q) > -1; });
+    if(hits.length){
+      searchFb.textContent = "找到 " + hits.length + " 个相关结果：" + hits.join("、");
+    }else{
+      searchFb.textContent = "暂未收录“" + q + "”，已记录你的搜索，编辑会优先补充相关内容。";
+    }
+    searchFb.classList.add("mk-show");
+  }
+  if(searchForm){
+    searchForm.addEventListener("submit", function(e){
+      e.preventDefault();
+      doSearch(searchInput.value);
+    });
+  }
+  if(searchInput){
+    var sTimer = null;
+    searchInput.addEventListener("input", function(){
+      clearTimeout(sTimer);
+      var v = searchInput.value;
+      sTimer = setTimeout(function(){ if(v.trim().length >= 2) doSearch(v); }, 420);
+    });
+  }
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  $$(".mk-like").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var base = parseInt(btn.getAttribute("data-count"),10) || 0;
+      var on = btn.getAttribute("aria-pressed") === "true";
+      btn.setAttribute("aria-pressed", on ? "false" : "true");
+      btn.classList.toggle("mk-on", !on);
+      var row = btn.closest(".mk-video-row");
+      var label = row ? $(".mk-like-count", row) : null;
+      var n = on ? base : base + 1;
+      btn.textContent = on ? "点赞" : "已点赞";
+      if(label){
+        label.textContent = "播放 " + (base/10000).toFixed(1) + " 万 · 赞 " + n;
+      }
+      toast(on ? "已取消点赞" : "感谢点赞，已同步到你的记录");
+    });
+  });
+
+  $$(".mk-fav").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var on = btn.getAttribute("aria-pressed") === "true";
+      btn.setAttribute("aria-pressed", on ? "false" : "true");
+      btn.classList.toggle("mk-on", !on);
+      btn.textContent = on ? "收藏" : "已收藏";
+      toast(on ? "已取消收藏" : "已加入收藏夹");
+    });
+  });
+
+  /* ---------- 复制链接 ---------- */
+  $$(".mk-copy").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var title = btn.getAttribute("data-title") || "视频内容";
+      var link = "https://www.16maokk.com/video/" + encodeURIComponent(title).slice(0,40);
+      function fallback(){
+        var ta = document.createElement("textarea");
+        ta.value = link;
+        document.body.appendChild(ta);
+        ta.select();
+        try{ document.execCommand("copy"); toast("链接已复制，可分享给朋友"); }
+        catch(err){ toast("复制失败，请手动选择链接"); }
+        document.body.removeChild(ta);
+      }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){
+          toast("链接已复制，可分享给朋友");
+        }).catch(fallback);
+      }else{
+        fallback();
+      }
+    });
+  });
+
+  /* ---------- 弹窗 ---------- */
+  var modal = $("#mkModal"), modalTitle = $("#mkModalTitle"), modalDesc = $("#mkModalDesc");
+  var modalFields = $("#mkModalFields"), modalSend = $("#mkModalSend"), modalClose = $("#mkModalClose");
+  var modalMode = "submit";
+
+  function openModal(mode){
+    modalMode = mode || "submit";
+    if(!modal) return;
+    if(modalMode === "author"){
+      modalTitle.textContent = modalTitle.getAttribute("data-author") || "创作者简介";
+      modalDesc.textContent = "这位创作者持续在官网发布原创内容，欢迎关注其作品合集与创作日志。";
+      modalFields.style.display = "none";
+      modalSend.style.display = "none";
+    }else if(modalMode === "coop"){
+      modalTitle.textContent = "品牌合作咨询";
+      modalDesc.textContent = "请留下合作方向与联系方式，我们会在两个工作日内与你沟通。";
+      modalFields.style.display = "block";
+      modalSend.style.display = "inline-flex";
+      $("#mkFieldTitle").placeholder = "合作方向";
+      $("#mkFieldDesc").placeholder = "简单描述你的品牌与目标";
+    }else if(modalMode === "report"){
+      modalTitle.textContent = "问题反馈";
+      modalDesc.textContent = "告诉我们遇到的问题或建议，每条反馈都会被记录。";
+      modalFields.style.display = "block";
+      modalSend.style.display = "inline-flex";
+      $("#mkFieldTitle").placeholder = "问题类型";
+      $("#mkFieldDesc").placeholder = "请描述具体情况";
+    }else{
+      modalTitle.textContent = "投稿入口";
+      modalDesc.textContent = "填写作品信息，编辑团队会在三个工作日内回复。";
+      modalFields.style.display = "block";
+      modalSend.style.display = "inline-flex";
+      $("#mkFieldTitle").placeholder = "作品标题";
+      $("#mkFieldDesc").placeholder = "一句话介绍你的作品";
+    }
+    modal.classList.add("mk-open");
+  }
+  function closeModal(){
+    if(modal) modal.classList.remove("mk-open");
+  }
+
+  $$(".mk-author-more").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      if(modalTitle) modalTitle.setAttribute("data-author", btn.getAttribute("data-author") + " · 创作者简介");
+      openModal("author");
+    });
+  });
+  ["#mkSubmitBtn","#mkSubmitBtn2"].forEach(function(sel){
+    var b = $(sel);
+    if(b) b.addEventListener("click", function(){ openModal("submit"); });
+  });
+  $$(".mk-coop").forEach(function(b){ b.addEventListener("click", function(){ openModal("coop"); }); });
+  $$(".mk-report").forEach(function(b){ b.addEventListener("click", function(){ openModal("report"); }); });
+  if(modalClose) modalClose.addEventListener("click", closeModal);
+  if(modal) modal.addEventListener("click", function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeModal(); });
+
+  if(modalSend){
+    modalSend.addEventListener("click", function(){
+      var name = ($("#mkFieldName") && $("#mkFieldName").value || "").trim();
+      var title = ($("#mkFieldTitle") && $("#mkFieldTitle").value || "").trim();
+      var desc = ($("#mkFieldDesc") && $("#mkFieldDesc").value || "").trim();
+      if(!name) name = "创作者";
+      if(!title){ toast("请先填写标题或问题类型"); return; }
+      if(!desc){ toast("请补充一段具体描述"); return; }
+      closeModal();
+      if(modalMode === "coop") toast("合作咨询已提交，感谢你的信任");
+      else if(modalMode === "report") toast("反馈已记录，感谢你的建议");
+      else toast("投稿已提交，" + name + "，编辑会尽快联系你");
+      $("#mkFieldName").value = "";
+      $("#mkFieldTitle").value = "";
+      $("#mkFieldDesc").value = "";
+    });
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var backTop = $("#mkBackTop");
+  function onScroll(){
+    if(!backTop) return;
+    if(window.scrollY > 520) backTop.classList.add("mk-show");
+    else backTop.classList.remove("mk-show");
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  if(backTop) backTop.addEventListener("click", function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+
+  /* ---------- 滚动淡入 ---------- */
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          en.target.classList.add("mk-in");
+          io.unobserve(en.target);
+        }
+      });
+    }, {threshold:0.08});
+    $$(".mk-reveal").forEach(function(el){ io.observe(el); });
+  }else{
+    $$(".mk-reveal").forEach(function(el){ el.classList.add("mk-in"); });
+  }
+
+  /* ---------- 数字滚动 ---------- */
+  function countUp(el, target, suffix){
+    var start = 0, dur = 1200, t0 = null;
+    function step(ts){
+      if(!t0) t0 = ts;
+      var p = Math.min((ts - t0)/dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = Math.round(start + (target - start) * eased);
+      el.textContent = val.toLocaleString("zh-CN") + (suffix || "");
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var statsBox = $(".mk-stats");
+  if(statsBox && "IntersectionObserver" in window){
+    var so = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          var v = $("#mkStatVideos"), c = $("#mkStatCreators");
+          if(v) countUp(v, 12800, "+");
+          if(c) countUp(c, 2400, "+");
+          so.disconnect();
+        }
+      });
+    }, {threshold:0.4});
+    so.observe(statsBox);
+  }
+
+})();
+</script>
+
+</body>
+  </html>
